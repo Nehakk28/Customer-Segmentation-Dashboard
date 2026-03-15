@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Customer Segmentation Dashboard</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<h1>Customer Segmentation Dashboard</h1>
+
+<form action="/predict" method="POST">
+
+<input type="number" name="income" placeholder="Annual Income (k$)" required>
+
+<input type="number" name="score" placeholder="Spending Score" required>
+
+<button type="submit">Analyze Customer</button>
+
+</form>
+
+<!-- <h2>Customer Cluster Visualization</h2>
+
+{{ graph|safe }}
+
+<h2>Customer Segment Statistics</h2>
+
+<ul>
+
+{% for cluster, value in stats.items() %}
+
+<li>Cluster {{ cluster }} : {{ value }} customers</li>
+
+{% endfor %}
+
+</ul> -->
+
+<a href="/dataset"><button type="button" class="btn btn-outline-primary">View Dataset Visualization</button></a>
+
+</div>
+
+</body>
+
+</html>

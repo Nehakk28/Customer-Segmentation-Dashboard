@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Dataset Visualization</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<h1>Dataset Visualization</h1>
+
+<p>Interactive graph showing all customer clusters.</p>
+
+{{ graph|safe }}
+
+<h2>Customer Segment Explanation</h2>
+
+<p><b>Cluster 0 – Average Customers</b><br>
+These customers have moderate income and moderate spending habits. They represent a stable group of regular buyers and are important for maintaining consistent sales.</p>
+
+<p><b>Cluster 1 – Premium Customers</b><br>
+These customers have high income and high spending behavior. Businesses should target them with premium products, loyalty programs, and exclusive offers.</p>
+
+<p><b>Cluster 2 – Budget Customers</b><br>
+These customers have lower income and low spending scores. They respond better to discounts, offers, and affordable product options.</p>
+
+<p><b>Cluster 3 – High Value Customers</b><br>
+These customers have higher income and relatively strong purchasing power. Marketing strategies should focus on personalized services and high-quality products.</p>
+
+<p><b>Cluster 4 – Low Engagement Customers</b><br>
+These customers have income but low spending behavior. Companies can increase engagement through promotions, advertisements, or loyalty incentives.</p>
+
+<a href="/"><button type="button" class="btn btn-outline-primary">Back to Dashboard</button></a>
+
+</div>
+
+</body>
+
+</html>

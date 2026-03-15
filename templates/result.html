@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Customer Result</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<h1>Customer Analysis Result</h1>
+
+<h2>{{ segment }}</h2>
+
+<p>{{ explanation }}</p>
+
+<!-- <h3>Cluster Visualization</h3>
+
+{{ graph|safe }} -->
+
+<a href="/"><button type="button" class="btn btn-outline-primary">Back to Dashboard</button></a>
+
+</div>
+
+</body>
+
+</html>
